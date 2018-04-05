@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+<!-- Header styling -->
+
 #header {
   display: flex;
   font-family: Verdana;
@@ -21,6 +23,7 @@
   align-items: center;
   padding-left: 30px;
   flex-grow: 1;
+  border: 1px solid black;
 }
 
 .logo img {
@@ -36,9 +39,48 @@
   align-items: center;
   padding-right: 40px;
   justify-content: flex-end;
+  border: 1px solid black;
 }
 
 nav span {
   display: inline-block;
   padding: 0px 10px;
+}
+
+<!-- Content styling -->
+
+.content {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.column1 {
+  display: inline-flex;
+  width: 630px;
+  border: 1px solid black;
+}
+
+.column2 {
+  display: inline-flex;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.column3 {
+  display: inline-flex;
+  width: 240px;
+  border: 1px solid black;
+}
+
+#lead-story {
+  border: 2px solid black;
+}
+
+.image-caption {
+  border: 2px solid black;
+}
+
+.story {
+  border: 2px solid black;
 }
