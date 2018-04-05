@@ -56,19 +56,19 @@ nav span {
 }
 
 .column1 {
-  display: inline-flex;
+  display: flex;
   width: 630px;
   border: 1px solid black;
 }
 
 .column2 {
-  display: inline-flex;
+  display: flex;
   width: 300px;
   border: 1px solid black;
 }
 
 .column3 {
-  display: inline-flex;
+  display: flex;
   width: 240px;
   border: 1px solid black;
 }
