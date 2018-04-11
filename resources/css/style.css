@@ -5,7 +5,7 @@
 
 <!-- Header styling -->
 
-#header {
+.header {
   display: flex;
   font-family: Verdana;
   font-size: 14px;
@@ -23,7 +23,6 @@
   align-items: center;
   padding-left: 30px;
   flex-grow: 1;
-  border: 1px solid black;
 }
 
 .logo img {
@@ -39,7 +38,6 @@
   align-items: center;
   padding-right: 40px;
   justify-content: flex-end;
-  border: 1px solid black;
 }
 
 nav span {
@@ -57,67 +55,70 @@ nav span {
 
 .content {
   display: flex;
-  border: 1px solid black;
-  margin: 0 auto;
-  width: 1250px;
+  width: 1232px;
+  padding-top: 116px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
 }
 
 .image-caption {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  width: 300px;
-}
-
-<!-- Column one -->
-
-.column.one {
-  width: 630px;
-  border: 1px solid black;
-}
-
-.lead-story {
-  border: 2px solid black;
-}
-
-.lead-image {
-  background-repeat: no-repeat;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 40px;
-  color: white;
-}
-
-.smallstories {
-  display: flex;
-  width: auto;
-  justify-content: space-around;
-}
-
-.smallimages {
-  display: flex;
-  width: auto;
-  justify-content: space-around;
-}
-
-<!-- Column two -->
-
-.column.two {
-  width: 300px;
-  border: 1px solid black;
-}
-
-<!-- Column three -->
-
-.column.three {
-  width: 240px;
-  border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    margin-top: 15px;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
 
 .narrative {
   font-family: Georgia;
   font-size: 17px;
   color: black;
-  border: 2px solid black;
+  margin-top: 16px;
+}
+
+<!-- Column one -->
+
+.column.one {
+  width: 630px;
+}
+
+.lead-image .image-caption {
+  background-repeat: no-repeat;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  text-align: left;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.column.one .story {
+  height: 300px;
+  align-content: center;
+}
+
+<!-- Column two -->
+
+.column.two {
+  width: 300px;
+}
+
+<!-- Column three -->
+
+.column.three {
+  width: 240px;
 }
